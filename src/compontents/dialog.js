@@ -1,5 +1,4 @@
 import React , { Component } from 'react'
-import Calculator from './state';
 class Dialog extends React.Component {
   constructor(props) {
     super(props)
@@ -11,24 +10,24 @@ class Dialog extends React.Component {
   render() {
     return (
       <div>
-        <div class="container">
+        <div className="container">
             <div class="avator"></div>
             <button id="scale">按钮</button>
             <p>bulr shadow</p>
         </div>
         
         <div>
-            <p class="pink">PINK</p>
+            <p className="pink">PINK</p>
         </div>
         <div>
-            <p class="orange">Box-Shadow</p>
+            <p className="orange">Box-Shadow</p>
         </div>
         <div>
-            <p class="yellow">YELLOW</p>
+            <p className="yellow">YELLOW</p>
         </div>
-        <div class="linear">
+        <div className="linear">
         </div>
-        <div id="dou"><div class="douyin"></div></div>
+        <div id="dou"><div className="douyin"></div></div>
 
         <DialogBox
         title={'弹出框'}

@@ -45,7 +45,7 @@ class CounterButton extends React.Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    console.log(nextProps,nextState);
+    // console.log(nextProps,nextState);
     if (this.props.color !== nextProps.color) {
       return true;
     }

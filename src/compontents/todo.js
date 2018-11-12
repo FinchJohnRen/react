@@ -27,7 +27,7 @@ class Todo extends React.Component {
     )
   }
   testClick = (e) => {
-     console.log(this);
+    //  console.log(this);
   }
   handleChange(e) {
     this.setState({ text: e.target.value })
