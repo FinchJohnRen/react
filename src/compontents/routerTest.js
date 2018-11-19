@@ -13,6 +13,7 @@ const RouterTest = () => (
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/topics">Topics</Link></li>
+        <li><Link to="/list">List</Link></li>
       </ul>
 
       <hr/>
@@ -20,6 +21,7 @@ const RouterTest = () => (
         <Route exact path="/" component={Home}/>
         <Route path="/about" component={About}></Route>
         <Route path="/topics" component={Topics}/>
+        <Route path="/list" component={List}/>
       </Switch>
     </div>
   </Router>
@@ -66,6 +68,18 @@ const Topics = ({ match }) => (
   </div>
 )
 
+class List extends React.Component{
+  constructor(props) {
+    super(props)
+    
+
+  }
+  render () {
+    return (
+      <div>12312</div>
+    )
+  }
+}
 const Topic = ({ match }) => (
   <div>
     <h3>{match.params.topicId}</h3>

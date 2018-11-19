@@ -8,6 +8,7 @@ import Calculator from './compontents/state'
 import Temperature from './compontents/temperature'
 import Dialog from './compontents/dialog'
 import FilterableProductTable from './compontents/filter'
+import RouterTest from './compontents/routerTest'
 import Csstest from './compontents/css'
 class FormattedDate extends React.Component {
   render() {
@@ -43,7 +44,6 @@ class App extends Component {
   componentDidMount() {
     console.log('123',this.myRef.current);
     console.log(this.iptRef);
-    this.myRef.date
     this.timerID = setInterval(
       () => this.tick(),
       1000
@@ -89,6 +89,7 @@ class App extends Component {
     var fahrenheit  = scale == 'c' ? tryCovert(temperature, toFahrenheit) : temperature
     return (
       <div>
+        <RouterTest/>
         {logo}
         <button onClick={this.ActionLink} age={this.state.age}>
           激活按钮
